@@ -5,8 +5,8 @@ import { LogoSiteComponent } from '../../components/logo/LogoSiteComponent';
 export const Header = () => {
    return (
       <header>
-         <div className="max-w-7xl mx-auto py-10 border flex justify-center">
-            <LogoSiteComponent />
+         <div className="max-w-7xl mx-auto py-12 border flex justify-between">
+            <LogoSiteComponent fill="#242D52" />
             <NavComponent />
             <ButtonComponent>Get Started</ButtonComponent>
          </div>

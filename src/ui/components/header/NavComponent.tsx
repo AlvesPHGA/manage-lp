@@ -1,6 +1,6 @@
 export const NavComponent = () => {
    return (
-      <nav>
+      <nav className="space-x-10">
          <a href="#">Pricing</a>
          <a href="#">Product</a>
          <a href="#">About Us</a>
