@@ -4,7 +4,12 @@ interface LogoProps {
 
 export const LogoSiteComponent = ({ fill }: LogoProps) => {
    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
+      <svg
+         aria-label="logo site"
+         xmlns="http://www.w3.org/2000/svg"
+         width="146"
+         height="24"
+      >
          <g fill="none" fill-rule="evenodd">
             <path
                fill={fill}
