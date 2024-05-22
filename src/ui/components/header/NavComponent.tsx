@@ -1,36 +1,23 @@
+import { headerStyle } from '../../styles/headerStyle';
+
+const { nav, navLinks } = headerStyle();
+
+const listNavigation = [
+   'Pricing',
+   'Product',
+   'About Us',
+   'Careers',
+   'Community',
+];
+
 export const NavComponent = () => {
    return (
-      <nav className="space-x-10">
-         <a
-            className="text-veryDarkBlue font-medium transition hover:opacity-80"
-            href="#"
-         >
-            Pricing
-         </a>
-         <a
-            className="text-veryDarkBlue font-medium transition hover:opacity-80"
-            href="#"
-         >
-            Product
-         </a>
-         <a
-            className="text-veryDarkBlue font-medium transition hover:opacity-80"
-            href="#"
-         >
-            About Us
-         </a>
-         <a
-            className="text-veryDarkBlue font-medium transition hover:opacity-80"
-            href="#"
-         >
-            Careers
-         </a>
-         <a
-            className="text-veryDarkBlue font-medium transition hover:opacity-80"
-            href="#"
-         >
-            Community
-         </a>
+      <nav className={nav()}>
+         {listNavigation.map((link) => (
+            <a key={link} className={navLinks()} href="#">
+               {link}
+            </a>
+         ))}
       </nav>
    );
 };
