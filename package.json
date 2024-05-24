@@ -13,6 +13,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@storybook/addon-postcss": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-variants": "^0.2.1"
