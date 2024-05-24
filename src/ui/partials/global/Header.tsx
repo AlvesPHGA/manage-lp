@@ -12,7 +12,7 @@ export const Header = () => {
          <div className={header()}>
             <LogoSiteComponent fill="#242D52" />
             <NavComponent />
-            <ButtonComponent>Get Started</ButtonComponent>
+            <ButtonComponent />
          </div>
       </header>
    );
