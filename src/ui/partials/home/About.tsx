@@ -1,10 +1,14 @@
 import { AboutContent } from '../../components/about/AboutContent';
 import { AboutList } from '../../components/about/AboutList';
 
+import { aboutStyle } from '../../styles/aboutStyle';
+
+const { section, container } = aboutStyle();
+
 export const About = () => {
    return (
-      <section className="py-20">
-         <div className="max-w-7xl mx-auto flex justify-between">
+      <section className={section()}>
+         <div className={container()}>
             <AboutContent />
             <AboutList />
          </div>

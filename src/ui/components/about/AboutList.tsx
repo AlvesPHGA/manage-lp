@@ -1,3 +1,7 @@
+import { aboutStyle } from '../../styles/aboutStyle';
+
+const { list, dt, dd } = aboutStyle();
+
 const itemList = [
    {
       id: 1,
@@ -22,14 +26,9 @@ export const AboutList = () => {
    return (
       <dl className="w-[40%]">
          {itemList.map(({ id, legend, text }) => (
-            <div
-               key={id}
-               className="before:content-['02'] before:first:content-['01'] before:last:content-['03'] before:text-lg before:mr-3 before:relative before:top-7 before:right-24 before:bg-brightRed before:px-6 before:py-2.5 before:rounded-[50px] before:font-medium before:text-white"
-            >
-               <dt className="text-darkBlue text-lg font-semibold">{legend}</dt>
-               <dd className="text-lg text-darkGrayishBlue mt-3 mb-7">
-                  {text}
-               </dd>
+            <div key={id} className={list()}>
+               <dt className={dt()}>{legend}</dt>
+               <dd className={dd()}>{text}</dd>
             </div>
          ))}
       </dl>
