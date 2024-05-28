@@ -1,8 +1,11 @@
+import { introStyle } from '../../styles/introStyle';
+
+const { introImage } = introStyle();
+
 export const IntroImage = () => {
    return (
-      <figure>
+      <figure className={introImage()}>
          <img
-            className="w-[620px]"
             src="./icons/illustration-intro.svg"
             alt="image some datas in percents about services of site"
          />
