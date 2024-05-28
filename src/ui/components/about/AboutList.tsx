@@ -26,7 +26,7 @@ export const AboutList = () => {
    return (
       <dl className="w-[40%]">
          {itemList.map(({ id, legend, text }) => (
-            <div key={id} className={list()}>
+            <div key={id} role={legend} className={list()}>
                <dt className={dt()}>{legend}</dt>
                <dd className={dd()}>{text}</dd>
             </div>
