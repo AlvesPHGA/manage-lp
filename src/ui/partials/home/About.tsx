@@ -1,3 +1,11 @@
+import { AboutContent } from '../../components/about/AboutContent';
+
 export const About = () => {
-   return;
+   return (
+      <section>
+         <div>
+            <AboutContent />
+         </div>
+      </section>
+   );
 };
