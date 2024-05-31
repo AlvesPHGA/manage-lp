@@ -2,6 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+import { depositionStyle } from '../../styles/depositionStyle';
+
+const { swiper, swiperSlide, figure, span, boxText, depo } = depositionStyle();
+
 const listCard = [
    {
       id: 1,
@@ -46,22 +50,16 @@ export const DepositionsCards = () => {
          loop={true}
          pagination={{ clickable: true }}
          autoplay={{ delay: 3000, disableOnInteraction: false }}
-         className="pt-20 mb-16 w-full"
+         className={swiper()}
       >
          {listCard.map(({ id, name, img, deposition }) => (
-            <SwiperSlide
-               key={id}
-               virtualIndex={id}
-               className="relative text-center px-20 pb-10 pt-20 bg-veryLightGray rounded !w-fit"
-            >
-               <figure className="size-[80px] absolute bottom-52 right-[50%] translate-x-[50%] z-10">
+            <SwiperSlide key={id} virtualIndex={id} className={swiperSlide()}>
+               <figure className={figure()}>
                   <img src={img} alt={`photo by ${name}`} />
                </figure>
-               <span className="text-lg text-darkBlue font-semibold">
-                  {name}
-               </span>
-               <div className="mt-5 w-[550px] mx-auto">
-                  <p className="text-darkGrayishBlue text-lg">"{deposition}"</p>
+               <span className={span()}>{name}</span>
+               <div className={boxText()}>
+                  <p className={depo()}>"{deposition}"</p>
                </div>
             </SwiperSlide>
          ))}
