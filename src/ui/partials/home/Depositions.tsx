@@ -8,7 +8,7 @@ const { section, title } = depositionStyle();
 export const Depositions = () => {
    return (
       <section className={section()}>
-         <h2 className={title()}>What they've said'</h2>
+         <h2 className={title()}>What they've said</h2>
          <DepositionsCards />
          <ButtonComponent />
       </section>
