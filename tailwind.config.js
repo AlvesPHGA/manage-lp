@@ -2,6 +2,17 @@
 export default {
    content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
    theme: {
+      backgroundPosition: {
+         right: '0px',
+         bottom: '100rem',
+
+         'right-bottom': 'left 23rem bottom 0rem',
+      },
+
+      backgroundSize: {
+         100: '90% 170%',
+      },
+
       extend: {
          colors: {
             brightRed: 'hsl(12, 88%, 59%)',
