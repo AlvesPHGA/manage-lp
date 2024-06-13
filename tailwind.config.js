@@ -3,14 +3,11 @@ export default {
    content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
    theme: {
       backgroundPosition: {
-         right: '0px',
-         bottom: '100rem',
-
-         'right-bottom': 'left 23rem bottom 0rem',
+         'rb-screen-1200plus': 'left 23rem bottom 0rem',
       },
 
       backgroundSize: {
-         100: '90% 170%',
+         'bs-1200plus': '90% 170%',
       },
 
       extend: {
