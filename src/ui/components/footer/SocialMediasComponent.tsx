@@ -6,7 +6,7 @@ import {
    Youtube,
 } from '../logo/IconsSocialMedia';
 
-export const SocialMidias = () => {
+export const SocialMediasComponent = () => {
    return (
       <>
          <Facebook />
