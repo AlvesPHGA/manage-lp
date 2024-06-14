@@ -1,3 +1,4 @@
+import { FormComponent } from '../../components/footer/FormComponent';
 import { LinksFooter } from '../../components/footer/LinksFooter';
 import { SocialMediasComponent } from '../../components/footer/SocialMediasComponent';
 import { LogoSiteComponent } from '../../components/logo/LogoSiteComponent';
@@ -11,6 +12,7 @@ export const Footer = () => {
                <SocialMediasComponent />
             </div>
             <LinksFooter />
+            <FormComponent />
          </div>
       </footer>
    );
