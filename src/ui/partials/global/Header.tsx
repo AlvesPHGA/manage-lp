@@ -1,4 +1,4 @@
-import { ButtonComponent } from '../../components/form/ButtonComponent';
+import { CTAComponent } from '../../components/cta/CTAComponent';
 import { NavComponent } from '../../components/header/NavComponent';
 import { LogoSiteComponent } from '../../components/logo/LogoSiteComponent';
 
@@ -12,7 +12,7 @@ export const Header = () => {
          <div className={header()}>
             <LogoSiteComponent fill="#242D52" />
             <NavComponent />
-            <ButtonComponent />
+            <CTAComponent />
          </div>
       </header>
    );
