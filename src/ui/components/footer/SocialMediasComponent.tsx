@@ -1,4 +1,5 @@
 import { ReactSVG } from 'react-svg';
+import { footerStyle } from '../../styles/footerStyle';
 
 const socialMidia = [
    'facebook',
@@ -8,13 +9,15 @@ const socialMidia = [
    'instagram',
 ];
 
+const { socialBox, iconsSocialMidia } = footerStyle();
+
 export const SocialMediasComponent = () => {
    return (
-      <div className="flex space-x-4">
+      <div className={socialBox()}>
          {socialMidia.map((s) => (
             <ReactSVG
                src={`public/icons/icon-${s}.svg`}
-               className="fill-white hover:fill-brightRed transition cursor-pointer hover:scale-125"
+               className={iconsSocialMidia()}
             />
          ))}
       </div>
