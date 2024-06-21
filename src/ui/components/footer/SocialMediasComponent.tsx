@@ -1,29 +1,22 @@
-import {
-   Facebook,
-   Instagram,
-   Pinterest,
-   Twitter,
-   Youtube,
-} from '../logo/IconsSocialMedia';
+import { ReactSVG } from 'react-svg';
+
+const socialMidia = [
+   'facebook',
+   'youtube',
+   'twitter',
+   'pinterest',
+   'instagram',
+];
 
 export const SocialMediasComponent = () => {
    return (
       <div className="flex space-x-4">
-         <a href="#" className="block w-fit hover:scale-125 transition">
-            <Facebook />
-         </a>
-         <a href="#" className="block w-fit hover:scale-125 transition">
-            <Youtube />
-         </a>
-         <a href="#" className="block w-fit hover:scale-125 transition">
-            <Twitter />
-         </a>
-         <a href="#" className="block w-fit hover:scale-125 transition">
-            <Pinterest />
-         </a>
-         <a href="#" className="block w-fit hover:scale-125 transition">
-            <Instagram />
-         </a>
+         {socialMidia.map((s) => (
+            <ReactSVG
+               src={`public/icons/icon-${s}.svg`}
+               className="fill-white hover:fill-brightRed transition cursor-pointer hover:scale-125"
+            />
+         ))}
       </div>
    );
 };
