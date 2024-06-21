@@ -18,6 +18,7 @@ export const SocialMediasComponent = () => {
             <ReactSVG
                src={`public/icons/icon-${s}.svg`}
                className={iconsSocialMidia()}
+               aria-label={`link ${s} social media`}
             />
          ))}
       </div>
