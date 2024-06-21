@@ -1,6 +1,6 @@
-import { ButtonComponent } from '../form/ButtonComponent';
-
 import { introStyle } from '../../styles/introStyle';
+import { CTAComponent } from '../cta/CTAComponent';
+import { ctaStyle } from '../../styles/ctaStyle';
 
 const { introContent, introTitle, introText } = introStyle();
 
@@ -18,7 +18,7 @@ export const IntroContent = () => {
                tasks while keeping the larger team goals in view.
             </p>
          </div>
-         <ButtonComponent />
+         <CTAComponent className={ctaStyle({ cta: 'primary' })} />
       </div>
    );
 };

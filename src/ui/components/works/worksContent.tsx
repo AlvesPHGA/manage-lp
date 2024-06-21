@@ -1,6 +1,8 @@
+import { ctaStyle } from '../../styles/ctaStyle';
 import { worksStyle } from '../../styles/worksStyle';
+import { CTAComponent } from '../cta/CTAComponent';
 
-const { container, subtitle, cta } = worksStyle();
+const { container, subtitle } = worksStyle();
 
 export const WorksContent = () => {
    return (
@@ -11,9 +13,7 @@ export const WorksContent = () => {
                <span className="text-5xl">works today.</span>
             </h2>
          </div>
-         <a className={cta()} href="#">
-            Get Started
-         </a>
+         <CTAComponent className={ctaStyle({ cta: 'secondary' })} />
       </div>
    );
 };
