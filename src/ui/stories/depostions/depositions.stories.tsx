@@ -1,9 +1,20 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Depositions } from '../../partials/home/Depositions';
 
-export default {
+const meta: Meta<typeof Depositions> = {
    title: 'Partials/Depositions',
-   componet: Depositions,
-} as Meta;
+   component: Depositions,
+};
 
-export const Deposition: StoryObj = {};
+export default meta;
+type Story = StoryObj<typeof Depositions>;
+
+export const Deposition: Story = {
+   decorators: [
+      (Story) => (
+         <div>
+            <Story />
+         </div>
+      ),
+   ],
+};
