@@ -6,5 +6,6 @@ export const defaultClass = tv({
       container: 'max-w-7xl mx-auto flex justify-between',
       subTitle:
          'text-5xl font-bold text-darkBlue tracking-tight leading-[56px]',
+      text: 'text-lg text-darkGrayishBlue font-normal',
    },
 });

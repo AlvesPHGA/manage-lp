@@ -2,7 +2,7 @@ import { introStyle } from '../../styles/introStyle';
 import { CTAComponent } from '../cta/CTAComponent';
 import { ctaStyle } from '../../styles/ctaStyle';
 
-const { introContent, introTitle, introText } = introStyle();
+const { introContent, introTitle, text } = introStyle();
 
 export const IntroContent = () => {
    return (
@@ -13,7 +13,7 @@ export const IntroContent = () => {
             </h1>
          </div>
          <div className="w-[60%]">
-            <p className={introText()}>
+            <p className={text()}>
                Manage makes it simple for software teams to plan day-to-day
                tasks while keeping the larger team goals in view.
             </p>
