@@ -1,12 +1,12 @@
 import { aboutStyle } from '../../styles/aboutStyle';
 
-const { aboutContent, aboutTitle, aboutText } = aboutStyle();
+const { aboutContent, subTitle, aboutText } = aboutStyle();
 
 export const AboutContent = () => {
    return (
       <div className={aboutContent()}>
          <div className="w-[90%]">
-            <h2 className={aboutTitle()}>What's different about Manage?</h2>
+            <h2 className={subTitle()}>What's different about Manage?</h2>
          </div>
          <div className="w-[60%]">
             <p className={aboutText()}>

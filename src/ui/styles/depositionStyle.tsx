@@ -1,9 +1,12 @@
 import { tv } from 'tailwind-variants';
+import { defaultClass } from './defaultStyle';
 
 export const depositionStyle = tv({
+   extend: defaultClass,
+
    slots: {
-      section: 'py-20 flex flex-col items-center',
-      title: 'text-5xl font-bold text-darkBlue tracking-tight leading-[56px] text-center mb-10',
+      section: 'flex flex-col items-center',
+      subTitle: 'text-center mb-10',
 
       swiper: 'pt-20 mb-16 w-full',
       swiperSlide:
