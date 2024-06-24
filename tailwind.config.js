@@ -4,10 +4,12 @@ export default {
    theme: {
       backgroundPosition: {
          'rb-screen-1200plus': 'left 23rem bottom 0rem',
+         'topBp-pattern-1200plus': 'left 65rem bottom 140rem',
       },
 
       backgroundSize: {
          'bs-1200plus': '90% 170%',
+         'topBs-pattern-1200plus': '52% 30%',
       },
 
       extend: {
