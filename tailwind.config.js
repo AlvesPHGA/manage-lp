@@ -5,11 +5,13 @@ export default {
       backgroundPosition: {
          'rb-screen-1200plus': 'left 23rem bottom 0rem',
          'topBp-pattern-1200plus': 'left 65rem bottom 140rem',
+         'bttmBp-pattern-1200plus': 'right 95rem bottom 18rem',
       },
 
       backgroundSize: {
          'bs-1200plus': '90% 170%',
          'topBs-pattern-1200plus': '52% 30%',
+         'bttmBs-pattern-1200plus': '40% 50%',
       },
 
       extend: {

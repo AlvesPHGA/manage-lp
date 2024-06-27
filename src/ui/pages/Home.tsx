@@ -7,8 +7,10 @@ export const Home = () => {
    return (
       <>
          <Intro />
-         <About />
-         <Depositions />
+         <div className="h-fit bg-[url('./public/icons/bg-tablet-pattern.svg')] bg-no-repeat bg-bttmBp-pattern-1200plus bg-bttmBs-pattern-1200plus">
+            <About />
+            <Depositions />
+         </div>
          <Works />
       </>
    );
