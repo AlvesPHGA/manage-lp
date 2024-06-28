@@ -4,7 +4,7 @@ import { Header } from './ui/partials/global/Header';
 
 function App() {
    return (
-      <div className="bg-[url('./public/icons/bg-tablet-pattern.svg')] bg-no-repeat bg-topBp-pattern-1200plus bg-topBs-pattern-1200plus">
+      <div className="bg-backSiteImg bg-no-repeat bg-topBp-pattern-1200plus bg-topBs-pattern-1200plus">
          <Header />
          <Home />
          <Footer />

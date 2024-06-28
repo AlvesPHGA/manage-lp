@@ -29,6 +29,10 @@ export default {
             vietnam: ['Be Vietnam Pro', 'sans-serif'],
          },
 
+         backgroundImage: {
+            backSiteImg: "url('./public/icons/bg-tablet-pattern.svg')",
+         },
+
          screens: {
             dlg: { max: '1024px' },
             dmd: { max: '768px' },
