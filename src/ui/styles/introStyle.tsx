@@ -9,8 +9,8 @@ export const introStyle = tv({
       container: 'items-center',
       introContent: 'space-y-10 w-[50%]',
       introTitle:
-         'text-6xl font-bold text-darkBlue tracking-tight leading-[68px]',
+         'text-6xl font-bold text-darkBlue tracking-tight leading-[68px] dlg:text-5xl dlg:leading-[54px]',
       text: 'mb-10',
-      introImage: 'w-[620px]',
+      introImage: 'w-[620px] dlg:w-[50%]',
    },
 });
