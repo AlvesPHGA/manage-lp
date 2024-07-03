@@ -7,7 +7,7 @@ export const Home = () => {
    return (
       <>
          <Intro />
-         <div className="bg-[url('./public/icons/bg-tablet-pattern.svg')] bg-no-repeat h-fit bg-bttmBp-pattern-1200plus bg-bttmBs-pattern-1200plus">
+         <div className="bg-backSiteImg bg-no-repeat h-fit bg-bttmBp-pattern-1200plus bg-bttmBs-pattern-1200plus dlg:bg-bttmBp-pattern-laptop dlg:bg-bttmBs-pattern-laptop">
             <About />
             <Depositions />
          </div>
