@@ -12,7 +12,7 @@ export const IntroContent = () => {
                Bring everyone together to build better products.
             </h1>
          </div>
-         <div className="w-[60%] dlg:w-[90%]">
+         <div className="w-[60%] dlg:w-[90%] dmd:w-full">
             <p className={text()}>
                Manage makes it simple for software teams to plan day-to-day
                tasks while keeping the larger team goals in view.

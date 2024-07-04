@@ -1,3 +1,4 @@
+import { ReactSVG } from 'react-svg';
 import { CTAComponent } from '../../components/cta/CTAComponent';
 import { NavComponent } from '../../components/header/NavComponent';
 import { LogoSiteComponent } from '../../components/logo/LogoSiteComponent';
@@ -12,8 +13,14 @@ export const Header = () => {
       <header>
          <div className={header()}>
             <LogoSiteComponent fill="#242D52" />
-            <NavComponent />
-            <CTAComponent className={ctaStyle({ cta: 'primary' })} />
+            <ReactSVG
+               className="hidden dmd:block"
+               src="./icons/icon-hamburger.svg"
+            />
+            <div className="flex items-center gap-64 dlg:gap-20 dmd:hidden">
+               <NavComponent />
+               <CTAComponent className={ctaStyle({ cta: 'primary' })} />
+            </div>
          </div>
       </header>
    );

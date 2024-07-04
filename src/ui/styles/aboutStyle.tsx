@@ -5,10 +5,10 @@ export const aboutStyle = tv({
    extend: defaultClass,
 
    slots: {
-      aboutContent: 'space-y-10 w-[50%] pt-7',
+      aboutContent: 'space-y-10 w-[50%] pt-7 dmd:space-y-6',
 
-      list: "before:content-['02'] before:first:content-['01'] before:last:content-['03'] before:text-lg before:mr-3 before:relative before:top-7 before:right-24 before:bg-brightRed before:px-6 before:py-2.5 before:rounded-[50px] before:font-medium before:text-white",
-      dt: 'text-darkBlue text-lg font-semibold',
-      dd: 'text-lg text-darkGrayishBlue mt-3 mb-7',
+      list: "before:content-['02'] before:first:content-['01'] before:last:content-['03'] before:text-lg before:mr-3 before:relative before:top-7 before:right-24 before:bg-brightRed before:px-6 before:py-2.5 before:rounded-[50px] before:font-medium before:text-white dmd:before:px-4 dmd:before:py-1.5 dmd:before:right-20",
+      dt: 'text-darkBlue text-lg font-semibold dmd:text-base',
+      dd: 'text-lg text-darkGrayishBlue mt-3 mb-7 dmd:text-base',
    },
 });

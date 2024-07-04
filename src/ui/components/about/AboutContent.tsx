@@ -8,7 +8,7 @@ export const AboutContent = () => {
          <div className="w-[90%]">
             <h2 className={subTitle()}>What's different about Manage?</h2>
          </div>
-         <div className="w-[60%]">
+         <div className="w-[60%] dmd:w-[90%]">
             <p className={text()}>
                Manage provides all the functionality your team needs, without
                the complexity. Our software is tailor-made form modern digital
