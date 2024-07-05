@@ -24,10 +24,12 @@ const itemList = [
 
 export const AboutList = () => {
    return (
-      <dl className="w-[40%]">
+      <dl className="w-[40%] dml:w-full">
          {itemList.map(({ id, legend, text }) => (
             <div key={id} role={legend} className={list()}>
-               <dt className={dt()}>{legend}</dt>
+               <span className="block w-[408px] absolute h-[35px] mb-1  bg-red-100 rounded-l-[50px]">
+                  <dt className={dt()}>{legend}</dt>
+               </span>
                <dd className={dd()}>{text}</dd>
             </div>
          ))}

@@ -6,6 +6,10 @@ import { depositionStyle } from '../../styles/depositionStyle';
 
 import { depositions } from '../../../../public/content.json';
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 const { swiper, swiperSlide, figure, span, boxText, depo } = depositionStyle();
 
 interface SwiperProps {

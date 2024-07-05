@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const ctaStyle = tv({
-   base: 'border-2 font-medium  rounded-full py-2.5 px-8  transition-all hover:bg-transparent',
+   base: 'border-2 font-medium  rounded-full py-2.5 px-8  transition-all hover:bg-transparent dml:mx-auto',
 
    variants: {
       cta: {
