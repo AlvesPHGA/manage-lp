@@ -4,6 +4,7 @@ export default {
    theme: {
       backgroundPosition: {
          'rb-screen-1200plus': 'left 23rem bottom 0rem',
+         'rb-screen-laptop': 'left 12rem bottom 0rem',
          'rb-screen-tablet': 'left 9rem bottom 0rem',
 
          'topBp-pattern-1200plus': 'left 65rem bottom 140rem',
@@ -17,6 +18,7 @@ export default {
 
       backgroundSize: {
          'bs-1200plus': '90% 170%',
+         'bs-laptop': '100% 100%',
          'bs-tablet': '100% 100%',
 
          'topBs-pattern-1200plus': '52% 30%',

@@ -1,6 +1,6 @@
 export const LinksFooter = () => {
    return (
-      <div className="flex space-x-40 dmd:space-x-10">
+      <div className="flex space-x-40 dlg:space-x-20 dmd:space-x-10">
          <div className="flex flex-col gap-4">
             <a
                href=""
